@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Roboto+Condensed:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        h1{
+            font-size: 45px;
+            text-align: center;
+        }
+    
+        header {
+        text-decoration: none; /* Remove underlining */
+        color: black; /* Set the color to black or your preferred color */
+        font-family: 'Roboto Condensed', sans-serif; 
+        }
+    
+        ul.header_list a {
+        text-decoration: none; /* Remove underlining */
+        color: black; /* Set the color to black or your preferred color */
+        }
+
+        .flex-row {
+            display: flex;
+            justify-content: flex-start; 
+            margin-bottom: 0; /* Remove margin between rows */
+            padding-right: 0%;
+
+        }
+    
+        .flex-container {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+        }
+        
+        .flex-item {
+            flex: 0 0 calc(33.33% - 20px);
+            padding: 10px;
+            margin-left: 0;
+            margin-right: 0;
+            box-sizing: border-box;
+            padding-right: 0;
+        }
+
+        .flex-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            justify-content: flex-start;
+            padding-right: 0;
+        }
+
+        
+        @media only screen and (max-width: 767px) {
+            section.main-image {
+                padding: 30px;
+            }
+            
+            .text-overlay {
+                font-size: 20px;
+            }
+            
+            li a {
+                font-size: 5px;
+            }
+            
+            .flex-container{
+                flex-wrap: wrap;
+            }
+            
+            .flex-item {
+                flex: 0 0 calc(50% - 20px); /* Set width for two columns with margin on smaller screens */
+            }
+        }
+
+        h1, span {
+        font-size: 2em; /* Adjust the font size as needed */
+    }
+    
+    </style>
+</head>  
+<header>
+    <span style="font-family: 'Roboto Condensed', sans-serif;">
+        <a href="index.html">SEVENTEEN</a>
+    </span>
+</header>
+<nav>
+    <ul class = " header_list">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="discography.html">Discography</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="notice.html">Notice</a></li>
+    </ul>
+</nav> 
+<h1>
+    <span style="font-family: 'Roboto Condensed', sans-serif;"></a>PROFILE</span>
+</h1> 
+<body>
+    <div class="flex-container">
+        <div class="flex-item">
+            <img src="scoups.jpg" style = "width: 150px ; height: 200px;">
+        </div>
+        <div class="flex-item">
+            <img src="jeonghan.jpg" style = "width: 150px ; height: 200px;">
+        </div>
+        <div class="flex-item">
+            <img src="joshua.jpg" style = "width: 150px ; height: 200px;">
+        </div>
+        <div class="flex-item">
+            <img src="jun.jpg" style = "width: 150px ; height: 200px;">
+        </div>
+        <div class="flex-item">
+            <img src="hoshi.jpg" style = "width: 150px ; height: 200px;">
+        </div>
+        <div class="flex-item">
+            <img src="wonwoo.jpg" style = "width: 150px ; height: 200px;">
+        </div>
+        <div class="flex-item">
+            <img src="woozi.jpg" style = "width: 150px ; height: 200px;">
+        </div>
+        <div class="flex-item">
+            <img src="the8.jpg" style = "width: 150px ; height: 200px;"> 
+        </div>
+        <div class="flex-item">
+            <img src="mingyu.jpg" style = "width: 150px ; height: 200px;">
+        </div>
+        <div class="flex-item">
+            <img src="dk.jpg" style = "width: 150px ; height: 200px;">
+        </div>
+        <div class="flex-item">
+            <img src="seungkwan.jpg" style = "width: 150px ; height: 200px;">
+        </div>
+        <div class="flex-item">
+            <img src="vernon.jpg" style = "width: 150px ; height: 200px;">
+        </div>
+        <div class="flex-item">
+            <img src="dino.jpg" style = "width: 150px ; height: 200px;">
+        </div>
+    </div>
+    
+</body>
+<br>
+<footer>
+    <span style="font-family: 'Roboto Condensed', sans-serif;">
+        <ul class = " header_list">
+            <li><a href="https://www.instagram.com/saythename_17" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/pledis_17" target="_blank">Twitter</a></li>
+            <li><a href="https://www.youtube.com/user/pledis17" >YouTube</a></li>
+    </span>
+    <span style="font-family: 'Roboto Condensed', sans-serif;">&copy; 2023 PLEDIS ENTERTAINMENT. All rights reserved.</span>
+</footer>
