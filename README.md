@@ -17,6 +17,34 @@ this website is catered to all who wants to get to more about the band and those
 
 the webiste's main colour scheme would be pastel colours, mainly rose quartz(13-1520) and serenity (15-3919).
 
+profile.html
+- showcase the members 
+- sub-units 
+- band history 
+- awards that the group won 
+
+member.html 
+- showcase the individual member 
+- birthdays 
+- fun fact about them 
+- solo songs 
+  
+discography.html 
+- show case all the albums that the group has released over the years 
+- clickable images to link to the music video 
+
+merchandise.html 
+- show case the groups merch 
+  - tour merch 
+  - albums 
+  - membership 
+  - DVDs 
+  - seasons greetings 
+
+notice.html 
+- allow fans to receive offical updates about the group 
+
 wireframe 
 https://www.figma.com/file/1T8KRdWhgVDxZxk5xJvi6n/fed-assignment-1-wireframe?type=design&node-id=0%3A1&mode=design&t=wyN3c7Qzz5r6fGeL-1 
-![Alt text](fed-asg1-wireframe.png)
+
+credits: 
