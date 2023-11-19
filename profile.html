@@ -6,6 +6,8 @@
     <title>Profile</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Roboto+Condensed:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playpen+Sans&family=Roboto+Condensed:wght@200;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
 
     <style>
         h1{
@@ -24,26 +26,25 @@
         color: black; /* Set the color to black or your preferred color */
         }
 
+        h2 {
+            display: flex;
+            align-items: center;
+            font-family: "Open Sans", sans-serif;
+            font-size: 20px;
+            margin-left: 40;
+        }
+
+        .image-container {
+        flex: 0 0 auto;
+        margin: 0 20px 0 0; /* top right bottom left */
+        }
+
+        .text-container {
+            flex: 1; /* Take up remaining space */
+        }
+
         @media only screen and (max-width: 767px) {
-            section.main-image {
-                padding: 30px;
-            }
-            
-            .text-overlay {
-                font-size: 20px;
-            }
-            
-            li a {
-                font-size: 5px;
-            }
-            
-            .flex-container{
-                flex-wrap: wrap;
-            }
-            
-            .flex-item {
-                flex: 0 0 calc(50% - 20px); /* Set width for two columns with margin on smaller screens */
-            }
+            /* Your existing media query styles */
         }
     </style>
 </head>  
@@ -64,9 +65,15 @@
 <h1>
     <span style="font-family: 'Roboto Condensed', sans-serif;"></a>PROFILE</span>
 </h1> 
-<main>
-    <img src="images/svt_grp2.jpg" style = "width: 400px">    
-</main>
+<h2>
+    <img src="images/svt_grp2.jpg" style = "width: 400px"> 
+    <p>
+        SEVENTEEN is a group with 13 members and 3 units coming together to form one team. Seventeen debuted in 2015 on May 26. <br>
+        They took their first step into the music industry with their first mini album '17 CARAT'. <br>
+        Seventeen consists of 3 different unit within the team (Hip-Hop team , Vocal team and Performance team). <br>
+        The three teams participates in the overall album production, earning them the title of 'self-produced ideas' solidifying thier status in the music industry both in Korea and worldwide.<br>
+    </p>   
+</h2>
 <br>
 <footer>
     <span style="font-family: 'Roboto Condensed', sans-serif;">
