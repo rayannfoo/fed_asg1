@@ -13,7 +13,6 @@ ul.header_list{
     display: flex;
     justify-content: space-around; 
     font-family: 'Roboto Condensed', sans-serif ;
-    font-size: 25px;
     margin-top: 10px;
     text-decoration: none; /* Remove underlining */
     color: black; /* Set the color to black or your preferred color */
