@@ -29,39 +29,148 @@
         font-size: 45px;
     }
 
-    .flex-row {
-    display: flex;
-    justify-content: space-around; /* Align items to the left in each row */
-    margin-bottom: 0; /* Remove margin between rows */
-    padding-right: 0%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-
-}
+    body {
+        margin: 0;
+    }
 
     .flex-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-}
-    
+        display: flex;
+        flex-direction: column; /* Change to column */
+        justify-content: flex-start;
+        align-items: flex-start; /* Align items to the start of the cross axis (left in this case) */
+        gap: 20px;
+    }
+
     .flex-item {
-    padding: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    box-sizing: border-box;
-    padding-right: 0;
-}
+        box-sizing: border-box;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
 
     .flex-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border: 1px solid #ccc;
-    justify-content: flex-start;
-    padding-right: 0;
-}
+        object-fit: cover;
+        border: 1px solid #ccc;
+        margin-right: 20px;
+    }
+
+    .scoups p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .jeonghan p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .joshua p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .jun p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .hoshi p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .wonwoo p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .woozi p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .the8 p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .mingyu p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .dk p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .seungkwan p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .vernon p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .dino p {
+        text-align: left; /* Align text to the left */
+        flex: 1; /* Take up remaining space */
+        font-family: "Open Sans" , sans-serif;
+        font-size: 20px;
+        margin: 0; /* Remove default margin for paragraphs */
+        font-family: 'Roboto Condensed', sans-serif;
+    }
 </style>
 <header>
     <span style="font-family: 'Roboto Condensed', sans-serif;"><a href="index.html">SEVENTEEN</a></span>
@@ -81,43 +190,218 @@
 <body>
     <div class="flex-container">
         <div class="flex-item">
-            <img src="images/scoups.jpg" style = "width: 150px ; height: 200px;">
+            <img src="images/scoups.jpg" style = "width: 350px ; height: 500px;">
+            <div class="scoups">
+                <p>
+                    <b>SCOUPS</b><br>
+                    Stage Name: S.Coups (에스쿱스) <br>
+                    Birth name: Choi Seung Cheol (최승철)<br>
+                    Position: Leader, Hip-Hop Team Leader, Rapper, Sub Vocalist<br>
+                    Birthday: August 8, 1995<br>
+                    MBTI: ISTP (2022 – taken by the members) / INFP (2019 – taken by himself)<br>
+                   Nationality: Korean<br>
+                    Sub-Unit: Hip-Hop Team (Leader); SVT Leaders<br>
+                    Instagram: @sound_of_coups<br>
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <img src="images/jeonghan.jpg" style = "width: 150px ; height: 200px;">
+            <img src="images/jeonghan.jpg" style = "width: 350px ; height: 500px;">
+            <div class="jeonghan">
+                <p>
+                    <b>JEONGHAN</b><br>
+                    Stage Name: Jeonghan (정한) <br>
+                    Birth Name: Yoon Jeong Han (윤정한)<br>
+                    Position: Lead Vocalist, Visual<br>
+                    Birthday: October 4, 1995<br>
+                    MBTI: ISFJ (2022 – taken by the members) <br>
+                    Nationality: Korean<br>
+                    Sub-Unit: Vocal Team<br>
+                    Instagram: @jeonghaniyoo_n<br>
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <img src="images/joshua.jpg" style = "width: 150px ; height: 200px;">
+            <img src="images/joshua.jpg" style = "width: 350px ; height: 500px;">
+            <div class="joshua">
+                <p>
+                    <b>JOSHUA</b><br>
+                    Stage Name: Joshua (조슈아)<br>
+                    Birth Name: Joshua Hong<br>
+                    Korean Name: Hong Ji Soo (홍지수)<br>
+                    Position: Lead Vocalist, Visual<br>
+                    Birthday: December 30, 1995<br>
+                    MBTI: ESTJ (2022 – taken by the members) / ENFJ (2019 – taken by himself)<br>
+                    Nationality: Korean-American<br>
+                    Sub-Unit: Vocal Team<br>
+                    Instagram: @joshu_acoustic<br>
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <img src="images/jun.jpg" style = "width: 150px ; height: 200px;">
+            <img src="images/jun.jpg" style = "width: 350px ; height: 500px;">
+            <div class="jun">
+                <p>
+                    <b>JUN</b><br>
+                    Stage Name: Jun (준)<br>
+                    Birth  Name: Wen Junhui (文俊辉)<br>
+                    Korean Name: Moon Jun Hwi (문준휘)<br>
+                    Position: Lead Dancer, Sub Vocalist<br>
+                    Birthday: June 10, 1996 <br>
+                    MBTI: ESFP (2023 – taken by himself) / INTP (2022 – taken by the members) / INFP (2019 – taken by himself) <br>
+                    Nationality: Chinese<br>
+                    Sub-Unit: Performance Team<br>
+                    Instagram: @junhui_moon<br>
+                    Weibo: wenjunhui <br>
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <img src="images/hoshi.jpg" style = "width: 150px ; height: 200px;">
+            <img src="images/hoshi.jpg" style = "width: 350px ; height: 500px;">
+            <div class="hoshi">
+                <p>
+                    <b>HOSHI </b><br>
+                    Stage Name: Hoshi (호시)<br>
+                    Birth Name: Kwon Soon Young (권순영)<br>
+                    Position: Performance Team Leader, Main Dancer, Lead Vocalist, Sub Rapper <br>
+                    Birthday: June 15, 1996<br>
+                    MBTI: INTJ (2022 – taken by the members) / INFP (2019 – taken by himself) <br>
+                    Nationality: Korean<br>
+                    Sub-Unit: Performance Team (Leader); SVT Leaders; BOOSEOKSOON <br>
+                    Instagram: @ho5hi_kwon<br>
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <img src="images/wonwoo.jpg" style = "width: 150px ; height: 200px;">
+            <img src="images/wonwoo.jpg" style = "width: 350px ; height: 500px;">
+            <div class="wonwoo">
+                <p>
+                    <b>WONWOO </b><br>
+                    Stage Name: Wonwoo (원우)<br>
+                    Birth Name: Jeon Won Woo (전원우)<br>
+                    Position: Rapper, Sub Vocalist<br>
+                    Birthday: July 17, 1996<br>
+                    MBTI: INFP (2022 – taken by the members) / INFJ (2019 – taken by himself) <br>
+                    Nationality: Korean<br>
+                    Sub-Unit: Hip-Hop Team<br>
+                    Instagram: @everyone_woo <br>
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <img src="images/woozi.jpg" style = "width: 150px ; height: 200px;">
+            <img src="images/woozi.jpg" style = "width: 350px ; height: 500px">
+            <div class="woozi">
+                <p>
+                    <b>WOOZI </b><br>
+                    Stage Name: Woozi (우지)<br>
+                    Birth Name: Lee Ji Hoon (이지훈)<br>
+                    Position: Vocal Team Leader, Lead Vocalist, Producer<br>
+                    Birthday: November 22, 1996<br>
+                    MBTI: INTJ (2022 – taken by the members) / INFJ (2019 – taken by himself) <br>
+                    Nationality: Korean<br>
+                    Sub-Unit: Vocal Team (Leader); SVT Leaders<br>
+                    Instagram: @woozi_universefactory<br>
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <img src="images/the8.jpg" style = "width: 150px ; height: 200px;"> 
+            <img src="images/the8.jpg" style = "width: 350px ; height: 500px"> 
+            <div class="the8">
+                <p>
+                    <b>THE8 </b><br>
+                    Stage Name: The8 (디에잇)<br>
+                    Birth Name: Xu Ming Hao (徐明浩)<br>
+                    Korean Name: Seo Myung Ho (서명호)<br>
+                    Position: Lead Dancer, Sub Vocalist, Sub Rapper<br>
+                    Birthday: November 7, 1997<br>
+                    MBTI: INTJ (2022 – taken by the members) / INFJ (2019 – taken by himself) <br>
+                    Nationality: Chinese<br>
+                    Sub-Unit: Performance Team<br>
+                    Instagram: @xuminghao_o<br>
+                    Weibo: xuminghao_The8<br>
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <img src="images/mingyu.jpg" style = "width: 150px ; height: 200px;">
+            <img src="images/mingyu.jpg" style = "width: 350px ; height: 500px">
+            <div class="mingyu">
+                <p>
+                    <b>MINGYU </b><br>
+                    Stage Name: Mingyu (민규)<br>
+                    Birth Name: Kim Min Gyu (김민규)<br>
+                    Position: Rapper, Sub Vocalist, Visual, Face of the Group<br>
+                    Birthday: April 6, 1997<br>
+                    MBTI: ENTJ (2022 – taken by the members) / ENFJ (2019 – taken by himself)<br>
+                    Nationality: Korean<br>
+                    Sub-Unit: Hip-Hop Team<br>
+                    Instagram: @min9yu_k<br>
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <img src="images/dk.jpg" style = "width: 150px ; height: 200px;">
+            <img src="images/dk.jpg" style = "width: 350px ; height: 500px">
+            <div class="dk">
+                <p>
+                    <b>DK / DOKYEOM</b><br>
+                    Stage Name: DK / Dokyeom (도겸)<br>
+                    Birth Name: Lee Seok Min (이석민)<br>
+                    Position: Main Vocalist<br>
+                    Birthday: February 18, 1997<br>
+                    MBTI: INFP (2022 – taken by the members)<br>
+                    Nationality: Korean<br>
+                    Sub-Unit: Vocal Team; BOOSEOKSOON (Leader)<br>
+                    Instagram: @dk_is_dokyeom<br>
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <img src="images/seungkwan.jpg" style = "width: 150px ; height: 200px;">
+            <img src="images/seungkwan.jpg" style = "width: 350px ; height: 500px">
+            <div class="seungkwan">
+                <p>
+                    <b>SEUNGKWAN </b><br>
+                    Stage Name: Seungkwan (승관)<br>
+                    Birth Name: Boo Seung Kwan (부승관)<br>
+                    Position: Main Vocalist, Face of the Group<br>
+                    Birthday: January 16, 1998<br>
+                    MBTI: ENTP (2022 – taken by the members) / ENFP (2019 – taken by himself)
+                    Nationality: Korean<br>
+                    Sub-Unit: Vocal Team; BOOSEOKSOON<br>
+                    Instagram: @pledis_boos<br>
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <img src="images/vernon.jpg" style = "width: 150px ; height: 200px;">
+            <img src="images/vernon.jpg" style = "width: 350px ; height: 500px;">
+            <div class="vernon">
+                <p>
+                    <b>VERNON </b><br>
+                    Stage Name: Vernon (버논)<br>
+                    Birth Name: Hansol Vernon Chwe<br>
+                    Korean Name: Choi Han Sol (최한솔)<br>
+                    Position: Rapper, Sub Vocalist, Visual, Face of the Group<br>
+                    Birthday: February 18, 1998<br>
+                    MBTI: ENTP (2022 – taken by the members)<br>
+                    Nationality: Korean-American<br>
+                    Sub-Unit: Hip-Hop Team<br>
+                    Instagram: @vernonline<br>
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <img src="images/dino.jpg" style = "width: 150px ; height: 200px;">
+            <img src="images/dino.jpg" style = "width: 350px ; height: 500px">
+            <div class="dino">
+                <p>
+                    <b>DINO </b><br>
+                    Stage Name: Dino (디노)<br>
+                    Birth Name: Lee Chan (이찬)<br>
+                    Position: Main Dancer, Sub Vocalist, Sub Rapper, Maknae<br>
+                    Birthday: February 11, 1999<br>
+                    MBTI: ENFJ (2022 – taken by the members) / ENFJ (2019 – taken by himself)<br>
+                    Nationality: Korean<br>
+                    Sub-Unit: Performance Team<br>
+                    Instagram: @feat.dino<br>
+                </p>
+            </div>
         </div>
     </div>
 </body>
