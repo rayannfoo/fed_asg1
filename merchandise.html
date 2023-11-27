@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MERCHANDISE</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Roboto+Condensed:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playpen+Sans&family=Roboto+Condensed:wght@200;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>  
@@ -56,7 +57,63 @@
         text-align: center;
         font-family: "Open Sans" , sans-serif;
     }
+
+    .flex-row {
+    display: flex;
+    justify-content: space-around; /* Align items to the left in each row */
+    margin-bottom: 0; /* Remove margin between rows */
+    padding-right: 0%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+    .flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+    
+    .flex-item {
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    padding-right: 0;
+}
+
+    .flex-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    justify-content: flex-start;
+    padding-right: 0;
+    width: 200px; height: 250px;
+}
+
+.enlarge {
+        width: 80%;
+        height: auto;
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+ #cart-icon {
+        font-size: 30px; /* Adjust the font size to make the cart icon bigger */
+        cursor: pointer; 
+ }
+ 
 </style>
+
+
 <header>
     <span style="font-family: 'Roboto Condensed', sans-serif;"><a href="index.html">SEVENTEEN</a></span>
 </header>
@@ -69,7 +126,7 @@
         <li><a href="notice.html">Notice</a></li>
     </ul>
 </nav> 
-<h1>
+<h1 onclick="toggleColors()">
     <span style="font-family: 'Roboto Condensed', sans-serif;"></a>MERCHANDISE</span>
 </h1>
 <div class="banner">
@@ -83,22 +140,229 @@
     </h2>
 </div>
 
+<div id="cart-display">
+    <div id="cart-icon" onclick="viewCart()">
+        🛒 
+        <a href="checkout.html">checkout</a></li>
+    </div>
+</div>
+
 <section id="tour-merch-section">
     <h3><b>TOUR MERCH</b></h3>
-    
+    <div class="flex-container">
+        <div class="flex-item" onclick="addToCart('OFFICIAL LIGHT STICK VER. 3')">
+            <img src="images/tour_merch1.jpg">            
+            <p>OFFICIAL LIGHT STICK VER. 3</p>
+            <p>$40.18</p>
+        </div>
+        
+        <div class="flex-item" onclick="addToCart('PINS')">
+            <img src="images/tour_merch2.jpg"></a>
+            <p>PINS</p>
+            <p>$7.29</p>
+        </div>
+        <div class="flex-item" onclick="addToCart('BONGBONGEE BAND')">
+            <img src="images/tour_merch3.jpg"></a>
+            <p>BONGBONGEE BAND</p>
+            <p>$18.77</p>
+        </div>
+        <div class="flex-item" onclick="addToCart('BONGBONGEE FLUFFY BAG')">
+            <img src="images/tour_merch4.jpg"></a>
+            <p>BONGBONGEE FLUFFY BAG</p>
+            <p>$31.98</p>
+        </div>
+        <div class="flex-item" onclick="addToCart('BONGBONGEE T-SHIRT')">
+            <img src="images/tour_merch5.jpg"></a>
+            <p>BONGBONGEE T-SHIRT</p>
+            <p>$36.90</p>
+        </div>
+        <div class="flex-item" onclick="addToCart('TOTE BAG')">
+            <img src="images/tour_merch6.jpg"></a>
+            <p>TOTE BAG</p>
+            <p>$34.44</p>
+        </div>
+        <div class="flex-item" onclick="addToCart('ZIP-UP HOODIE')">
+            <img src="images/tour_merch7.jpg"></a>
+            <p>ZIP-UP HOODIE</p>
+            <p>$94.30</p>
+        </div>
+        <div class="flex-item" onclick="addToCart('L/S T-SHIRT')">
+            <img src="images/tour_merch8.jpg" ></a>
+            <p>L/S T-SHIRT</p>
+            <p>$56.58</p>
+        </div>
+        <div class="flex-item" onclick="addToCart('S/S T-SHIRT (BLACK)')">
+            <img src="images/tour_merch9.jpg" ></a>
+            <p>S/S T-SHIRT (BLACK)</p>
+            <p>$39.36</p>
+        </div>
+        <div class="flex-item" onclick="addToCart('/S T-SHIRT (WHITE)')">
+            <img src="images/tour_merch10.jpg" ></a>
+            <p>S/S T-SHIRT (WHITE)</p>
+            <p>$39.36</p>
+        </div>
 </section>
 
-<section id="membership-section">
+<section id="membership-section" >
     <h3><b>MEMBERSHIP</b></h3>
+    <div class="flex-container">
+        <div class="flex-item" onclick="addToCart('ARAT MEMBERSHIP KIT')">
+            <img src="images/membership1.jpg" ></a>
+            <p>CARAT MEMBERSHIP KIT</p>
+            <P>$12.29</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('CARAT MEMBERSHIP')">
+            <img src="images/membership2.jpg"></a>
+            <p>CARAT MEMBERSHIP</p>
+            <P>$18.04</P>
+        </div>
     
 </section>
 
 <section id="dvd-section">
     <h3><b>DVD</b></h3>
+    <div class="flex-container">
+        <div class="flex-item" onclick="addToCart('SEVENTEEN WORLD TOUR [BE THE SUN] - SEOUL DIGITAL')">
+            <img src="images/dvd.jpg"></a>
+            <p>SEVENTEEN WORLD TOUR <br>
+                [BE THE SUN] <br>
+                - SEOUL DIGITAL <br>
+            </p>
+            <P>$45.92</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('SEVENTEEN WORLD TOUR [BE THE SUN] - SEOUL DIGITAL & TOUR DIARY')">
+            <img src="images/dvd2.jpg" ></a>
+            <p>SEVENTEEN WORLD TOUR <br>
+                [BE THE SUN] <br>
+                - SEOUL DIGITAL <br>
+                & TOUR DIARY <br>
+            </p>
+            <P>$60.76</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('SEVENTEEN WORLD TOUR [BE THE SUN] - SEOUL DVD & TOUR DIARY')">
+            <img src="images/dvd3.jpg"></a>
+            <p>SEVENTEEN WORLD TOUR <br>
+                [BE THE SUN] <br>
+                - SEOUL DVD <br>
+                & TOUR DIARY <br>
+            </p>
+            <P>$60.76</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('2022 SEVENTEEN IN CARAT LAND MEMORY BOOK + DIGITAL CODE ')">
+            <img src="images/dvd4.jpg" ></a>
+            <p> 2022 SEVENTEEN IN<br>
+                CARAT LAND MEMORY BOOK <br>
+                 + DIGITAL CODE <br>
+            </p>
+            <P>$45.10</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('SEVENTEEN IN CARAT LAND MEMORY BOOK + SET DVD (2021 + 2022)')">
+            <img src="images/dvd5.jpg"></a>
+            <p> SEVENTEEN IN CARAT LAND <br>
+                 MEMORY BOOK + SET DVD<br>
+                 (2021 + 2022)<br>
+            </p>
+            <P>$45.10</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('SEVENTEEN IN CARAT LAND MEMORY BOOK + SET DIGITAL CODE (2021 + 2022)')">
+            <img src="images/dvd6.jpg" ></a>
+            <p> SEVENTEEN IN CARAT LAND <br>
+                MEMORY BOOK + SET DIGITAL<br>
+                CODE (2021 + 2022)<br>
+           </p>
+           <P>$75.52</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('2021 SEVENTEEN IN CARAT LAND MEMORY BOOK + SET DVD')">
+            <img src="images/dvd7.jpg"></a>
+            <p> 2021 SEVENTEEN IN CARAT LAND <br>
+                MEMORY BOOK + SET DVD<br>
+           </p>
+           <P>$45.10</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('2021 SEVENTEEN IN CARAT LAND MEMORY BOOK + DIGITAL CODE')">
+            <img src="images/dvd8.jpg"></a>
+            <p> 2021 SEVENTEEN IN CARAT LAND <br>
+                MEMORY BOOK + DIGITAL CODE<br>
+           </p>
+           <P>$42.64</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('2021 SEVENTEEN [POWER OF LOVE]')">
+            <img src="images/dvd9.jpg" ></a>
+            <p> 2021 SEVENTEEN <br>
+                [POWER OF LOVE]<br>
+           </p>
+           <P>$45.10</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('2021 SEVENTEEN [IN-COMPLETE]')">
+            <img src="images/dvd10.jpg" ></a>
+            <p> 2021 SEVENTEEN <br>
+                [IN-COMPLETE]<br>
+           </p>
+           <P>$36.08</P>
+        </div>
+    </div>
+    
     
 </section>
 
 <section id="seasons-greetings-section">
     <h3><b>SEASONS GREETINGS</b></h3>
-    
+    <div class="flex-container">
+        <div class="flex-item" onclick="addToCart('2023 WALL CALENDAR')">
+            <img src="images/seasons1.jpg"></a>
+            <p>2023 WALL CALENDAR</p>
+            <P>$16.40</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('2023 SEASONS GREETINGS')">
+            <img src="images/seasons2.jpg" ></a>
+            <p>2023 SEASONS GREETINGS</p>
+            <P>$34.44</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('2023 SEASONS GREETINGS SET')">
+            <img src="images/seasons3.jpg" ></a>
+            <p>2023 SEASONS GREETINGS SET</p>
+            <P>$48.29</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('2022 SEASONS GREETINGS')">
+            <img src="images/seasons4.jpg"></a>
+            <p>2022 SEASONS GREETINGS</p>
+            <P>$32.80</P>
+        </div>
+
+        <div class="flex-item" onclick="addToCart('2023 WALL CALENDAR')">
+            <img src="images/seasons5.jpg"></a>
+            <p>2023 WALL CALENDAR</p>
+            <P>$16.40</P>   
+        </div>
+
+        <div class="flex-item" onclick="addToCart('2023 SEASONS GREETINGS SET')">
+            <img src="images/seasons6.jpg"></a>
+            <p>2023 SEASONS GREETINGS SET</p>
+            <P>$46.74</P>
+        </div>
+    </div>
 </section>
+
+<footer>
+    <span style="font-family: 'Roboto Condensed', sans-serif;">
+        <ul class = " header_list">
+            <li><a href="https://www.instagram.com/saythename_17" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/pledis_17" target="_blank">Twitter</a></li>
+            <li><a href="https://www.youtube.com/user/pledis17" >YouTube</a></li>
+    </span>
+    <span style="font-family: 'Roboto Condensed', sans-serif;">&copy; 2023 PLEDIS ENTERTAINMENT. All rights reserved.</span>
+</footer>
+  
