@@ -18,3 +18,10 @@ function viewCart() {
         }
     }
 }
+
+/* dropdown for members page */
+
+function toggleDropdown() {
+    var dropdown = document.querySelector('.dropdown');
+    dropdown.classList.toggle('active');
+  }

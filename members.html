@@ -57,7 +57,7 @@
         margin-right: 20px;
     }
 
-    .scoups p {
+    .scoups , .jeonghan , .joshua , .jun , .hoshi , .wonwoo , .woozi , .the8 , .mingyu , .dk , .seungkwan , .vernon , .dino p {
         text-align: left; /* Align text to the left */
         flex: 1; /* Take up remaining space */
         font-family: "Open Sans" , sans-serif;
@@ -66,113 +66,6 @@
         font-family: 'Roboto Condensed', sans-serif;
     }
 
-    .jeonghan p {
-        text-align: left; /* Align text to the left */
-        flex: 1; /* Take up remaining space */
-        font-family: "Open Sans" , sans-serif;
-        font-size: 20px;
-        margin: 0; /* Remove default margin for paragraphs */
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    .joshua p {
-        text-align: left; /* Align text to the left */
-        flex: 1; /* Take up remaining space */
-        font-family: "Open Sans" , sans-serif;
-        font-size: 20px;
-        margin: 0; /* Remove default margin for paragraphs */
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    .jun p {
-        text-align: left; /* Align text to the left */
-        flex: 1; /* Take up remaining space */
-        font-family: "Open Sans" , sans-serif;
-        font-size: 20px;
-        margin: 0; /* Remove default margin for paragraphs */
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    .hoshi p {
-        text-align: left; /* Align text to the left */
-        flex: 1; /* Take up remaining space */
-        font-family: "Open Sans" , sans-serif;
-        font-size: 20px;
-        margin: 0; /* Remove default margin for paragraphs */
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    .wonwoo p {
-        text-align: left; /* Align text to the left */
-        flex: 1; /* Take up remaining space */
-        font-family: "Open Sans" , sans-serif;
-        font-size: 20px;
-        margin: 0; /* Remove default margin for paragraphs */
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    .woozi p {
-        text-align: left; /* Align text to the left */
-        flex: 1; /* Take up remaining space */
-        font-family: "Open Sans" , sans-serif;
-        font-size: 20px;
-        margin: 0; /* Remove default margin for paragraphs */
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    .the8 p {
-        text-align: left; /* Align text to the left */
-        flex: 1; /* Take up remaining space */
-        font-family: "Open Sans" , sans-serif;
-        font-size: 20px;
-        margin: 0; /* Remove default margin for paragraphs */
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    .mingyu p {
-        text-align: left; /* Align text to the left */
-        flex: 1; /* Take up remaining space */
-        font-family: "Open Sans" , sans-serif;
-        font-size: 20px;
-        margin: 0; /* Remove default margin for paragraphs */
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    .dk p {
-        text-align: left; /* Align text to the left */
-        flex: 1; /* Take up remaining space */
-        font-family: "Open Sans" , sans-serif;
-        font-size: 20px;
-        margin: 0; /* Remove default margin for paragraphs */
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-    
-    .seungkwan p {
-        text-align: left; /* Align text to the left */
-        flex: 1; /* Take up remaining space */
-        font-family: "Open Sans" , sans-serif;
-        font-size: 20px;
-        margin: 0; /* Remove default margin for paragraphs */
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    .vernon p {
-        text-align: left; /* Align text to the left */
-        flex: 1; /* Take up remaining space */
-        font-family: "Open Sans" , sans-serif;
-        font-size: 20px;
-        margin: 0; /* Remove default margin for paragraphs */
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    .dino p {
-        text-align: left; /* Align text to the left */
-        flex: 1; /* Take up remaining space */
-        font-family: "Open Sans" , sans-serif;
-        font-size: 20px;
-        margin: 0; /* Remove default margin for paragraphs */
-        font-family: 'Roboto Condensed', sans-serif;
-    }
 </style>
 
 <body>
@@ -192,11 +85,28 @@
 </nav>
 
 <h1>
-    <span style="font-family: 'Roboto Condensed', sans-serif;"></a>MEMBERS</span>
+    <div class="dropdown" onclick="toggleDropdown()">
+        <span style="font-family: 'Roboto Condensed', sans-serif;" class="dropdown-trigger">Members</span>
+        <div class="dropdown-content">
+            <a href="#scoups">SCOUPS</a>
+            <a href="#jeonghan">JEONGHAN</a>
+            <a href="#joshua">JOSHUA</a>
+            <a href="#jun">JUN</a>
+            <a href="#hoshu">HOSHI</a>
+            <a href="#wonwoo">WONWOO</a>
+            <a href="#woozi">WOOZI</a>
+            <a href="#the8">THE8</a>
+            <a href="#mingyu">MINGYU</a>
+            <a href="#dk">DK</a>
+            <a href="#seungkwan">SEUNGKWAN</a>
+            <a href="#vernon">VERNON</a>
+            <a href="#dino">DINO</a>
+        </div>
+    </div>
 </h1>
 <body>
     <div class="flex-container">
-        <div class="flex-item">
+        <div class="flex-item" id="scoups">
             <img src="images/scoups.jpg" style = "width: 350px ; height: 500px;">
             <div class="scoups">
                 <p>
@@ -212,7 +122,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" id="jeonghan">
             <img src="images/jeonghan.jpg" style = "width: 350px ; height: 500px;">
             <div class="jeonghan">
                 <p>
@@ -228,7 +138,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" id="joshua">
             <img src="images/joshua.jpg" style = "width: 350px ; height: 500px;">
             <div class="joshua">
                 <p>
@@ -245,7 +155,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" id="jun">
             <img src="images/jun.jpg" style = "width: 350px ; height: 500px;">
             <div class="jun">
                 <p>
@@ -263,7 +173,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" id="hoshi">
             <img src="images/hoshi.jpg" style = "width: 350px ; height: 500px;">
             <div class="hoshi">
                 <p>
@@ -279,7 +189,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" id="wonwoo">
             <img src="images/wonwoo.jpg" style = "width: 350px ; height: 500px;">
             <div class="wonwoo">
                 <p>
@@ -295,7 +205,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" id="woozi">
             <img src="images/woozi.jpg" style = "width: 350px ; height: 500px">
             <div class="woozi">
                 <p>
@@ -311,7 +221,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" id="the8">
             <img src="images/the8.jpg" style = "width: 350px ; height: 500px"> 
             <div class="the8">
                 <p>
@@ -329,7 +239,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" id="mingyu">
             <img src="images/mingyu.jpg" style = "width: 350px ; height: 500px">
             <div class="mingyu">
                 <p>
@@ -345,7 +255,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" id="dk">
             <img src="images/dk.jpg" style = "width: 350px ; height: 500px">
             <div class="dk">
                 <p>
@@ -361,7 +271,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" id="seungkwan">
             <img src="images/seungkwan.jpg" style = "width: 350px ; height: 500px">
             <div class="seungkwan">
                 <p>
@@ -377,7 +287,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" id="vernon">
             <img src="images/vernon.jpg" style = "width: 350px ; height: 500px;">
             <div class="vernon">
                 <p>
@@ -394,7 +304,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" id="dino">
             <img src="images/dino.jpg" style = "width: 350px ; height: 500px">
             <div class="dino">
                 <p>
