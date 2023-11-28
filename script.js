@@ -1,12 +1,3 @@
-// Function to toggle between Rose Quartz and Serenity
-function toggleColors() {
-    var body = document.body;
-    var currentColor = body.style.backgroundColor;
-
-    // Toggle between Rose Quartz and Serenity
-    body.style.backgroundColor = currentColor === "rgb(250, 216, 214)" ? "#91A8D0" : "#FAD8D6";
-}
-
 // Initialize an empty cart array
 let cart = [];
 

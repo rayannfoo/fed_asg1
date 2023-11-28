@@ -6,7 +6,7 @@ header a{
 }
 
 
-ul.header_list{
+ul.footer_list{
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -17,6 +17,14 @@ ul.header_list{
     text-decoration: none; /* Remove underlining */
     color: black; /* Set the color to black or your preferred color */
 
+}
+
+ul nav{
+    text-decoration: none; /* Remove underlining */
+    color: black; /* Set the color to black or your preferred color */
+    justify-content: space-around; 
+    font-family: 'Roboto Condensed', sans-serif ;
+    margin-top: 10px;
 }
 
 .header_list li {
@@ -37,5 +45,30 @@ img {
 footer{
     margin-top: 10px;
     font-size: 15px;
+}
+
+header {
+    float: left; /* Set the float property to left */
+}
+
+nav a {
+float: right;
+text-decoration: none; /* Remove underlining */
+color: black; /* Set the color to black or your preferred color */
+}
+
+.menu ul {
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.menu ul li {
+margin-left: 25px; /* Adjust margin-left instead of margin-right */
+font-family: 'Roboto Condensed', sans-serif ;
+font-size: 25px;
 }
 
