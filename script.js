@@ -50,3 +50,20 @@ document.addEventListener('click', function(event) {
     }
 });
 
+
+//hamburger menu
+const toggleMenu = document.getElementById('toggle-menu');
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+    toggleMenu.checked = !toggleMenu.checked;
+});
+
+toggleMenu.addEventListener('change', () => {
+    if (toggleMenu.checked) {
+        menu.style.right = '0';
+    } else {
+        menu.style.right = '-300px';
+    }
+});

@@ -57,18 +57,30 @@
             flex: 1; /* Take up remaining space */
         }
 
-        @media only screen and (max-width: 767px) {
-            /* Your existing media query styles */
+        @media only screen and (max-width: 990px) {
+        header span,
+        nav ul li a,
+        footer span {
+            font-size: 1em; /* Adjust font size for smaller screens */
         }
+
+        .image-container {
+            margin: 0; /* Remove right margin on smaller screens */
+        }
+    }
     </style>
 </head>  
 <body>
     <header>
     <span style="font-family: 'Roboto Condensed', sans-serif;"><a href="index.html">SEVENTEEN</a></span>
 </header>
-<nav>
-    <div class="menu">
-        <ul>
+
+<div class="navigation">
+    <input type="checkbox" class="toggle-menu" id="toggle-menu">
+        <div class="hamburger"></div>
+        <label for="toggle-menu" class="hamburger"></label>
+    
+        <ul class="menu">
             <li><a href="profile.html">Profile</a></li>
             <li><a href="members.html">Members</a></li>
             <li><a href="discography.html">Discography</a></li>
@@ -76,7 +88,8 @@
             <li><a href="notice.html">Notice</a></li>
         </ul>
     </div>
-</nav>
+</div>
+
 <h1>
     <span style="font-family: 'Roboto Condensed', sans-serif;"></a>PROFILE</span>
 </h1> 

@@ -51,28 +51,6 @@ header {
     float: left; /* Set the float property to left */
 }
 
-nav a {
-float: right;
-text-decoration: none; /* Remove underlining */
-color: black; /* Set the color to black or your preferred color */
-}
-
-.menu ul {
-display: flex;
-justify-content: center;
-align-items: center;
-list-style: none;
-margin: 0;
-padding: 0;
-}
-
-.menu ul li {
-margin-left: 25px; /* Adjust margin-left instead of margin-right */
-font-family: 'Roboto Condensed', sans-serif ;
-font-size: 25px;
-}
-
-
 /* drop down for members page */ 
 /* Styles for the dropdown container */
 .dropdown {
@@ -119,50 +97,130 @@ font-size: 25px;
     display: block;
   }
 
- /* media query for mobile*/
-@media (max-width: 768px) {
-  #menu-btn{
-      display: inline-block;
-  }
-  
-  .fa-times{
-      transform: rotate(180deg);
+/* menu */ 
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu li a {
+  font-family: 'Roboto Condensed', sans-serif ;
+  font-size: 25px;
+  text-decoration: none;
+  color: #333;
+  padding: 40px 25px;
+  line-height: 1;
+  transition: 0.3s;       
+}
+
+.hamburger{
+  position:relative;
+  width: 30px;
+  height: 4px;
+  background: #333;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.hamburger:before,
+.hamburger:after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 0px;
+  background: #333;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.hamburger:before{
+  top: -10px;
+  width: 20px;
+}
+
+.hamburger:after{
+  top: 10px;
+  width: 20px;
+}
+
+.toggle-menu{
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  z-index: 3;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.hamburger ,
+.toggle-menu{
+  display: none;
+}
+
+.navigation input:checked ~ .menu{
+  right: 0;
+}
+
+
+@media screen and (max-width: 990px) {
+  .hamburger,
+  .toggle-menu{
+    display: block;
   }
 
-  .header .navbar{
-      position: absolute;
-      top: 99%;
-      left: 0; right: 0;
-      background: var(--white);
-      border-top: .1rem solid var(--secondary);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  
-  .header .navbar.active{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  .header .navbar a{
-      display: block;
-      margin: 2rem;
+  .menu{
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background: #fff;
+    width: 300px;
+    height: 100%;
+    transition: right 0.5s; 
+    padding: 20px 0;
   }
 
-  .home .slide .content{
-      width: 40rem;
-  }
-  
-  .home .slide .content h3{
-      font-size: 4rem;
+  .menu li {
+    margin-bottom: 15px; /* Increase margin between menu items for smaller screens */
+}
+
+  .toggle-menu {
+    right: 0; 
   }
 
-  @media (max-width: 450px){
+  .navigation input:checked ~ .menu {
+    right: 0;
+}
 
-      html{
-          font-size: 50%;
-      }
-      
-      .home .slide .content h3{
-          font-size: 3rem;
-      }
+}
+
+@media only screen and (max-width: 990px) {
+  header span,
+  nav ul li a,
+  footer span {
+      font-size: 1em; /* Adjust font size for smaller screens */
+  }
+
+  .image-container {
+      margin: 0; /* Remove right margin on smaller screens */
   }
 }
