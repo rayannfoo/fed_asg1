@@ -93,25 +93,12 @@
     width: 200px; height: 250px;
 }
 
-.enlarge {
-        width: 80%;
-        height: auto;
-        z-index: 2;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        background-color: rgba(255, 255, 255, 0.9);
-    }
-
  #cart-icon {
         font-size: 30px; /* Adjust the font size to make the cart icon bigger */
         cursor: pointer; 
  }
 
-.cart-display{
+.cart-display a {
     text-decoration: none; /* Remove underlining */
     color: black; /* Set the color to black or your preferred color */
     font-family: 'Roboto Condensed', sans-serif; 
@@ -150,10 +137,8 @@
 </div>
 
 <div id="cart-display">
-    <div id="cart-icon" onclick="viewCart()">
-        🛒 
-        <a href="checkout.html">checkout</a></li>
-    </div>
+    <div id="cart-icon" onclick="viewCart()">🛒</div>
+    <a href="checkout.html" onclick="checkCart()">Checkout</a>
 </div>
 
 <section id="tour-merch-section">
