@@ -51,3 +51,8 @@ credits:
 https://www.pledis.co.kr/html/artist/seventeen/KOR/profile
 https://weverseshop.io/en/shop/GL_USD/artists/7/categories/126
 
+walkthrough:
+https://connectnpedu.sharepoint.com/sites/nomorethan3/_layouts/15/stream.aspx?id=%2Fsites%2Fnomorethan3%2FShared%20Documents%2FGeneral%2FRecordings%2FMeeting%20in%20%5FGeneral%5F%2D20231201%5F205732%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview
+
+github link:
+https://rayannfoo.github.io/fed_asg1/
