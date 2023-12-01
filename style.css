@@ -16,8 +16,15 @@ ul.footer_list{
     margin-top: 10px;
     text-decoration: none; /* Remove underlining */
     color: black; /* Set the color to black or your preferred color */
-
+    font-size: 15px;
 }
+
+.footer a  {
+  text-decoration: none; /* Remove underlining */
+  color: black; /* Set the color to black or your preferred color */
+  font-family: 'Roboto Condensed', sans-serif; 
+  }
+
 
 ul nav{
     text-decoration: none; /* Remove underlining */
@@ -41,11 +48,6 @@ img {
     height: auto;
     display: block;
 } 
-
-footer{
-    margin-top: 10px;
-    font-size: 15px;
-}
 
 header {
     float: left; /* Set the float property to left */
@@ -136,7 +138,7 @@ header {
   cursor: pointer;
   z-index: 2;
   transition: 0.3s;
-  top: 10px; 
+  top: 20px; 
   right: 10px; 
 }
 
@@ -250,6 +252,7 @@ header {
 
   h1 {
     font-size: 24px;
+    text-align: center;
   }
 
   h2 {
@@ -291,4 +294,10 @@ header {
   #cart-icon {
     font-size: 20px;
   }
+}
+
+/* nav bar */ 
+.menu a:hover{
+  color: #f7cac9;
+  transition: 0.3s;
 }

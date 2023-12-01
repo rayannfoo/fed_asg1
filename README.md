@@ -48,3 +48,6 @@ wireframe
 https://www.figma.com/file/1T8KRdWhgVDxZxk5xJvi6n/fed-assignment-1-wireframe?type=design&node-id=0%3A1&mode=design&t=wyN3c7Qzz5r6fGeL-1 
 
 credits: 
+https://www.pledis.co.kr/html/artist/seventeen/KOR/profile
+https://weverseshop.io/en/shop/GL_USD/artists/7/categories/126
+
